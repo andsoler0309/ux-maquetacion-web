@@ -1,0 +1,34 @@
+<app-navBar></app-navBar>
+
+<div class="sonido_crear">
+  <div class="back-button__container">
+    <a href="sonidos"><button>Volver</button></a>
+  </div>
+
+  <form>
+
+    <label for="soundName">Nombre</label>
+    <input type="text" id="soundName" placeholder="Nombre del sonido" value="Sonido 1">
+
+    <label>Sonido</label>
+
+    <div class="recorded_container">
+      <img src="assets/iconos/recorded.svg" alt="Sonido grabado">
+      <div class="audio-container">
+        <div class="waveform" onclick="document.getElementById('audio').play()"></div>
+      </div>
+
+      <audio id="audio" src="something.mp3"></audio>
+    </div>
+
+    <div class="microphone__container">
+
+      <div class="microphone-icon">
+        <img src="assets/iconos/microfono.svg" alt="Microfono">
+      </div>
+
+      <button type="submit" (click)="onSubmit()" >Guardar</button>
+    </div>
+  </form>
+
+</div>

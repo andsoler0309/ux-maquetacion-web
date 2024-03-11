@@ -1,0 +1,22 @@
+<div class="calendar">
+  <div class="header">
+    <button (click)="goToPreviousMonth()">‹</button>
+    <span>{{ currentMonth | date: 'MMMM y' }}</span>
+    <button (click)="goToNextMonth()">›</button>
+  </div>
+  <div class="weekdays">
+    <span *ngFor="let day of ['LUN', 'MAR', 'MIE', 'JUE', 'VIE', 'SAB', 'DOM']">{{ day }}</span>
+  </div>
+  <div class="days">
+
+    <div *ngFor="let week of weeks" class="week">
+      <div *ngFor="let day of week" class="day"
+           [class.other-month]="!day.isCurrentMonth"
+           [class.selected]="day.isSelected"
+           (click)="toggleDaySelection(day)">
+        {{ day.date | date: 'd' }}
+      </div>
+    </div>
+
+  </div>
+</div>

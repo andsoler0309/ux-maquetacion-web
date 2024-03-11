@@ -1,0 +1,22 @@
+<app-navBar></app-navBar>
+
+<div class="repeticion_crear">
+  <div class="back-button__container">
+    <a href="repeticiones"><button>Volver</button></a>
+  </div>
+
+  <form>
+    <label for="repetitionName">Nombre</label>
+    <input type="text" id="repetitionName" placeholder="Nombre repetición" value="Repetición 1" >
+
+    <label>Repetición</label>
+
+    <div class="calendar_container">
+
+      <app-calendar></app-calendar>
+
+
+      <button type="submit" (click)="onSubmit()" >Guardar</button>
+    </div>
+  </form>
+</div>

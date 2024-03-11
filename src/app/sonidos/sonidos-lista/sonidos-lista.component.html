@@ -1,0 +1,43 @@
+<app-navBar></app-navBar>
+
+<div class="home">
+  <div class="home__title">
+    <h1>Tus sonidos</h1>
+  </div>
+  <div class="tus__container">
+    <a href="/sonidos/crear"><button>Agregar sonido</button></a>
+  </div>
+
+
+  <div class="lista__container">
+
+
+    <div class="lista__item__container">
+      <a href="sonidos/editar">
+        <div class="lista__item">
+          <p>Sonido 1</p>
+        </div>
+      </a>
+      <img src="assets/iconos/eliminar.svg" alt="Eliminar" (click)="openDialog('Sonido 1')">
+    </div>
+
+
+    <div class="lista__item__container">
+      <a href="sonidos/editar">
+        <div class="lista__item">
+          <p>Sonido 2</p>
+        </div>
+      </a>
+      <img src="assets/iconos/eliminar.svg" alt="Eliminar" (click)="openDialog('Sonido 2')">
+    </div>
+
+    <div class="lista__item__container">
+      <a href="sonidos/editar">
+        <div class="lista__item">
+          <p>Sonido 3</p>
+        </div>
+      </a>
+      <img src="assets/iconos/eliminar.svg" alt="Eliminar" (click)="openDialog('Sonido 3')" >
+    </div>
+
+</div>

@@ -1,0 +1,100 @@
+
+.repeticion_crear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 80%;
+  width: 100%;
+}
+
+.repeticion_crear .back-button__container {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.back-button__container button {
+  background-color: #6B8E9C;
+  color: #fff;
+  border: none;
+  /* padding: 1rem 1rem; */
+  font-size: 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 12rem;
+  height: 3rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.repeticion_crear form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 20%;
+}
+
+.repeticion_crear form label {
+  font-size: 1.8rem;
+  color: #253237;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+.repeticion_crear form input {
+  font-size: 1.7rem;
+  width: calc(100% - 2rem);
+  height: 2.8rem;
+  margin: 0.3rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #C2DFE3;
+  border: 3px solid #5C6B73;
+  margin-bottom: 2.5rem;
+}
+
+.repeticion_crear form input::placeholder {
+  color: #7F98A6;
+}
+
+
+.calendar_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+.calendar_container button {
+  background-color: #253237;
+  color: #fff;
+  border: none;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 70%;
+  height: 5rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.calendar_container button:hover {
+  background-color: #5C6B73;
+  color: #fff;
+}
+
+app-calendar {
+  margin: 2rem 0;
+}

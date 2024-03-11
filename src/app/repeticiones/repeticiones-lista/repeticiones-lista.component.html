@@ -1,0 +1,43 @@
+
+<app-navBar></app-navBar>
+
+<div class="home">
+  <div class="home__title">
+    <h1>Tus repeticiónes</h1>
+  </div>
+
+  <div class="tus__container">
+    <a href="/repeticiones/crear"><button>Agregar repetición</button></a>
+  </div>
+
+  <div class="lista__container">
+
+    <div class="lista__item__container">
+      <a href="repeticiones/editar">
+        <div class="lista__item">
+          <p>Repeticion 1</p>
+        </div>
+      </a>
+      <img src="assets/iconos/eliminar.svg" alt="Eliminar" (click)="openDialog('Repeticion 1')">
+    </div>
+
+
+    <div class="lista__item__container">
+      <a href="repeticiones/editar">
+        <div class="lista__item">
+          <p>Repeticion 2</p>
+        </div>
+      </a>
+      <img src="assets/iconos/eliminar.svg" alt="Eliminar" (click)="openDialog('Repeticion 2')">
+    </div>
+
+    <div class="lista__item__container">
+      <a href="repeticiones/editar">
+        <div class="lista__item">
+          <p>Repeticion 3</p>
+        </div>
+      </a>
+      <img src="assets/iconos/eliminar.svg" alt="Eliminar" (click)="openDialog('Repeticion 3')">
+    </div>
+
+</div>

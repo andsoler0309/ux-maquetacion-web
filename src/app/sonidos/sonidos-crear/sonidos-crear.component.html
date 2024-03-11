@@ -1,0 +1,25 @@
+<app-navBar></app-navBar>
+
+<div class="sonido_crear">
+  <div class="back-button__container">
+    <a href="sonidos"><button>Volver</button></a>
+  </div>
+
+  <form>
+
+    <label for="soundName">Nombre</label>
+    <input type="text" id="soundName" placeholder="Nombre del sonido">
+
+    <label>Grabar sonido</label>
+
+    <div class="microphone__container">
+
+      <div class="microphone-icon">
+        <img src="assets/iconos/microfono.svg" alt="Microfono">
+      </div>
+
+      <button type="submit" (click)="onSubmit()" >Guardar</button>
+    </div>
+  </form>
+
+</div>
